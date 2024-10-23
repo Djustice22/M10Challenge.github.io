@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -41,25 +44,78 @@ body {
 .nav-links-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
 }
 
 .nav-links-wrapper a {
   text-decoration: none;
   color: #f2f2f2;
-  font-weight: bold;
+  transition: color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-a:hover {
+h1 {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-links-wrapper a:hover {
   text-decoration-line: underline;
   text-underline-offset: 10px;
   padding: 5px;
   border-radius: 5px;
 }
 
-a:visited {
+.nav-links-wrapper a:visited {
   color: #d98555;
+}
+
+.nav-links-wrapper a.active {
+  font-weight: bolder;
+  color: #f2f2f2;
+  border-bottom: 3px solid #082b59;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("/images/gulp-menu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0 155px;
+  color: #f2f2f2;
+}
+
+.about-us-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  font-size: 32px;
+}
+
+.para-wrapper {
+  padding: 32px;
+  /* background-color: rgba(89, 51, 29, 0.7); */
+  background-color: rgba(19, 29, 38, 0.6);
+  border-radius: 10px;
+  width: 65vw;
+  margin: auto;
+}
+
+.para-wrapper p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.para-wrapper a {
+  color: #f2f2f2;
 }
 
 /* Footer */

@@ -11,6 +11,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -41,25 +44,85 @@ body {
 .nav-links-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
 }
 
 .nav-links-wrapper a {
   text-decoration: none;
   color: #f2f2f2;
-  font-weight: bold;
+  transition: color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-a:hover {
+h1 {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  padding: 25px;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav-links-wrapper a:hover {
   text-decoration-line: underline;
   text-underline-offset: 10px;
   padding: 5px;
   border-radius: 5px;
 }
 
-a:visited {
+.nav-links-wrapper a:visited {
   color: #d98555;
+}
+
+.nav-links-wrapper a.active {
+  font-weight: bolder;
+  color: #f2f2f2;
+  border-bottom: 3px solid #082b59;
+}
+
+.product-wrapper {
+  display: grid; /* Use grid layout */
+  grid-template-rows: auto 1fr; /* Two rows: one for header, one for paragraph */
+  gap: 15px; /* Space between rows */
+  max-width: 300px; /* Set a maximum width for each product */
+  margin: 20px; /* Space around each product */
+  border: 1px solid #ccc; /* Optional: border for better visibility */
+  padding: 15px; /* Padding inside each product */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+}
+
+.para-header {
+  display: flex; /* Use flexbox for header */
+  flex-direction: column; /* Stack image and title vertically */
+  align-items: center; /* Center align items */
+}
+
+.para-header img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: rounded image corners */
+}
+
+h3 {
+  margin: 10px 0; /* Space between image and title */
+  font-size: 1.5em; /* Title font size */
+  text-align: center; /* Center title text */
+}
+
+p {
+  text-align: center; /* Center paragraph text */
+  font-size: 1em; /* Adjust font size as needed */
+  line-height: 1.5; /* Line height for readability */
 }
 
 /* Footer */
